@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaffolding Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .header {
+            background-color: #E83437;
+            padding: 10px 20px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            max-width: 60px;
+        }
+        .header .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        .nav-link {
+            color: #fff;
+            margin: 0 10px;
+        }
+        .nav-link:hover {
+            color: #ff8c00;
+        }
+        .hero-section, .services, .gallery, .areas-covered {
+            padding: 10px 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 5px;
+            
+        }    
+       
+       .hero-section {
+    background-color: #E83437;
+    background-image: url('/main_level_up_business.png');
+    background-size: cover;
+    background-position: center 60%; /* Adjusts image to crop the top */
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers elements horizontally */
+    max-width: 600px; /* Optional: to limit text width */
+}
+
+.hero-content h2,
+.hero-content p,
+.hero-button {
+    margin: 10px 0; /* Adds spacing between each element */
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #E83437;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+            color: #fff;
+            text-align: center;
+        }
+        
+        .areas-covered .list-container {
+  padding-left: 20px;
+  /* Adjust as needed */
+}
+
+        .btn-quote {
+            background-color: #333;
+            color: #fff;
+            border-radius: 30px;
+        }
+        .btn-quote:hover {
+            background-color: #444;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #E83437;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        .areas-covered .map-container {
+            min-height: 300px;
+            overflow: hidden;
+            color: #E83437;
+        }
+        .areas-covered .list-container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="d-flex align-items-center">
+            <img src="/level_up_logo.png" alt="Company Logo">
+            <span class="title" style="color: black;">Level Up Scaffolding</span>
+        </div>
+        <nav>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="form.html" class="nav-link">Quote</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+    <div class="hero-content">
+        <h2 style="font-weight: bold; color: black;">Professional Scaffolding Services</h2>
+       <p style="color: white; font-weight: bold; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);">
+  Your trusted partner in safe and reliable scaffolding solutions.
+</p>
+        <a href="form.html" class="hero-button">Request a Quote</a>
+    </div>
+</section>
+
+
+   <!-- Information Section -->
+<section id="services" class="services text-center">
+    <div class="container"><br>
+      <h2 style="font-weight: bold;">Support for your project.</h2>
+      <p><br><b>Looking for a trusted local scaffolding company to support your requirements? </b><br> Whether you need scaffolding for solar installations, access towers, chimney repairs, temporary roofing, or roofing repairs, our experienced team is here to help. With a dedication to quality, safety, and efficient service, we provide scaffolding solutions tailored to meet your needs.<br><br>With years of experience in the scaffolding industry, our friendly team has become a cornerstone in the community, known for delivering <b>reliable</b> and high-quality services. We have built a <b>solid reputation</b> through our commitment to <b>safety</b>, professionalism, and client satisfaction. Covering residential properties from temporary roofs, access towers to chimneyy stacks our expert team is dedicated to meeting the unique needs of each client, providing safe, durable, and efficient scaffolding solutions.</p><br><img src="/Scaffolding_Solar_Energy_Surrey.png" alt="Description of image" style="width: 100%; max-width: 90%; height: auto;">
+      <h2 style="font-weight: bold;"><br>Why choose us?</h2>
+        <p><br>We offer reliable, safe, and cost-effective scaffolding services tailored to your needs. Our scaffolders bring a wealth of technical experience to every job, ensuring safe and <b>reliable structures</b> that meet the highest industry standards. We use only top-quality equipment that is rigorously maintained, giving you peace of mind that your project will be supported by the best materials available.<br><br></p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img src="/level_up_Scaffolders_Surrey_London.png" alt="Expert Team" class="img-fluid mb-2">
+                <h5 style="font-weight: bold;">Access Towers</h5>
+                <p>Highly trained professionals to ensure safe installations.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/Roofing_scaffolding_surrey.png" alt="Quality Materials" class="img-fluid mb-2">
+                <h5 style="font-weight: bold;">Temporary Roofs</h5>
+                <p>Using only premium-grade materials for all projects.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/Scaffolding_Business_Crawley.png" alt="Customer Focus" class="img-fluid mb-2">
+                <h5 style="font-weight: bold;">Chimney Stacks</h5>
+                <p>Your satisfaction is our priority, through to execution.</p>
+            </div>
+            <h2 style="font-weight: bold;"><br>You're in safe hands.</h2>
+        </div>
+        <p><br>With extensive experience in the scaffolding sector, our dedicated team has established itself as a <b>trusted </b>pillar in the community, recognised for providing dependable and top-notch services. We pride ourselves on our <b>strong reputation</b>, built on unwavering commitment to safety, professionalism, and customer satisfaction. Serving residential properties, we offer a range of services, including temporary roofs, access towers, and chimney stacks. Our skilled professionals are focused on addressing the individual needs of every client, ensuring safe, <b>robust</b>, and efficient scaffolding solutions.<br><br> Each team member is professionally trained, fully certified, and dedicated to making sure that safety is never compromised. From planning and setup to dismantling, we work with <b>precision</b> and care on every project. Whether it’s a straightforward access tower or a complex temporary roofing structure, we have the skills to get the job done right.</p>
+        <a href="form.html" class="btn btn-quote mt-4">Request a Quote</a>
+    </div>
+</section>
+  
+<!-- Areas We Cover Section -->
+<section class="areas-covered" style="background-color: #E83437; color: white;">
+    <div class="container text-center">
+        <h2 style="font-weight: bold; color: white;">Areas We Cover</h2>
+        <div class="row mt-4">
+            <!-- Google Map Container -->
+            <div class="col-md-6 map-container">
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319507.6361260129!2d-0.7256917655719696!3d51.27149520655754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df555ad5122581%3A0xd55283445c034277!2sSurrey!5e0!3m2!1sen!2suk!4v1730296598942!5m2!1sen!2suk" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Areas List Container -->
+            <div class="col-md-6 list-container text-md-right">
+                <h5 style="font-weight: bold;">We proudly serve the following areas:</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled mt-3">
+                            <li>- Central London</li>
+                            <li>- West London</li>
+                            <li>- East London</li>
+                            <li>- Suburb Area's</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled mt-3">
+                            <li>- North London</li>
+                            <li>- South London</li>
+                            <li>- Greater London</li>
+                            <li>- Suburb Area's</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="font-weight: bold;"> Follow us on socials:</p>
+                <div class="social-icons mt-3">
+                    <a href="https://www.facebook.com/p/Level-up-Scaffolding-61559271544047" target="blank" style="color: white;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="blank" style="color: white;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/level_upscaffolding24/" target="blank" style="color: white;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" style="color: white;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p> Proudly serving the residents of London </p>
+                <a href="form.html" class="btn btn-quote mt-4">Request a Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+
+.social-icons {
+    font-size: 1.5em; /* Icon size */
+    text-align: center; /* Center the icons */
+}
+
+.social-icons a {
+    margin-right: 15px; /* Space between icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #E8571B; /* Change color on hover */
+}
+
+.map-frame {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 370px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+    </div>
+</section>
+
+
+    <!-- Gallery Carousel Section -->
+   <section class="gallery">
+    <div class="container">
+        <h2 style="font-weight: bold; text-align: center;">Our Gallery</h2>
+        <div id="workCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Residential_scaffold_luton.png" class="d-block w-100" alt="Work Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Roof_scaffold_Heathrow.png" class="d-block w-100" alt="Work Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Scaffolder_Reading_Watford_Scaffolders.png" class="d-block w-100" alt="Work Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Scaffolding_Business_Uxbridge_Hounslow.png" class="d-block w-100" alt="Work Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Building_scaffold_in_Hatfield.png" class="d-block w-100" alt="Work Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Chimney_scaffold_roof.png" class="d-block w-100" alt="Work Image 6">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+   
+   
+    <!-- Cookie Banner -->
+<div id="cookieBanner" style="
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: auto;
+">
+    <p style="margin-bottom: 10px;">This site uses cookies. By clicking the button, you accept our use of cookies.</p>
+    <button onclick="acceptCookies()" style="
+        background-color: #E83437;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    ">Accept Cookies</button>
+    <a href="privacy.html" style="color: #88A4E3; text-decoration: underline; margin-top: 10px;">Privacy Policy</a>
+</div>
+
+<script>
+    function acceptCookies() {
+        document.getElementById("cookieBanner").style.display = "none";
+        // You can also add cookie logic here to store the user’s acceptance
+    }
+</script>
+
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Level Up Scaffolding. All rights reserved.</p>
+            <div>
+                <a href="https://www.facebook.com/p/Level-up-Scaffolding-61559271544047" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/level_upscaffolding24/" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
