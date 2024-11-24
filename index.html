@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXBZLCZYKY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MXBZLCZYKY');
-</script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -387,26 +378,71 @@ In addition to safety, quality scaffolding can enhance the aesthetic appeal of a
     max-width: 350px;
     margin: auto;
 ">
-    <p style="margin-bottom: 10px;">This site uses cookies. By clicking the button, you accept our use of cookies.</p>
-    <button onclick="acceptCookies()" style="
-        background-color: #E83437;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-weight: bold;
-        cursor: pointer;
-    ">Accept Cookies</button>
+    <p style="margin-bottom: 10px;">This site uses cookies. By clicking a button, you accept or reject our use of cookies.</p>
+    <div style="display: flex; gap: 10px;">
+        <button onclick="acceptCookies()" style="
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        ">Accept</button>
+        <button onclick="rejectCookies()" style="
+            background-color: #E83437;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        ">Reject</button>
+    </div>
     <a href="privacy.html" style="color: #88A4E3; text-decoration: underline; margin-top: 10px;">Privacy Policy</a>
 </div>
 
 <script>
     function acceptCookies() {
+        // Load cookies and Google Analytics
+        loadCookies();
         document.getElementById("cookieBanner").style.display = "none";
-        // You can also add cookie logic here to store the user’s acceptance
+        localStorage.setItem('cookieConsent', 'accepted'); // Save consent in localStorage
+    }
+
+    function rejectCookies() {
+        document.getElementById("cookieBanner").style.display = "none";
+        localStorage.setItem('cookieConsent', 'rejected'); // Save rejection in localStorage
+    }
+
+    function loadCookies() {
+        // Load Google Analytics dynamically
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MXBZLCZYKY';
+        document.head.appendChild(script);
+
+        script.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MXBZLCZYKY'); // Replace with your GA ID
+        };
+       
+        console.log('Google Analytics loaded');
+    }
+
+    // Check if the user has already made a choice
+    window.onload = function() {
+        const consent = localStorage.getItem('cookieConsent');
+        if (consent === 'accepted') {
+            loadCookies(); // Automatically load cookies if previously accepted
+            document.getElementById("cookieBanner").style.display = "none";
+        } else if (consent === 'rejected') {
+            document.getElementById("cookieBanner").style.display = "none";
+        }
     }
 </script>
-
     
 
     <!-- Footer Section -->
